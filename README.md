@@ -1,6 +1,6 @@
 <br/>
 <p align="center">
-  <h3 align="center">ShopDuck Phone Store </h3>
+  <h3 align="center">ShopDuck e-commerce </h3>
 
   <p align="center">
     The ShopDuck Project is a PHP-based e-commerce platform tailored for selling mobile phones. It provides essential features such as product showcasing, cart management, checkout, and database storage.
