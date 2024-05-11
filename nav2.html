@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Nav By P</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+Body {
+    font-family: "Montserrat", "sans-serif";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: None;
+    text-decoration: none;
+}
+
+nav {
+    height: 115px;
+    background: #24252a;
+}
+
+nav img {
+    width: 150px;
+    position: absolute;
+    top: 5px;
+    left: 12%;
+    cursor: pointer;
+}
+
+nav ul {
+    float: right;
+    margin-right: 50px;
+    font-size: 55px;
+    z-index:2;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 16px;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+label #btn,
+label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1118px) {
+    nav img {
+        left: 8%;
+    }
+}
+
+@media (max-width: 944px) {
+    nav img {
+        left: 8%;
+        top: 20px;
+        width: 130px;
+    }
+    nav ul li a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 860px) {
+    label #btn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #24252a;
+        top: 114px;
+        left: -855px;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+}
+</style>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <a href="https://firet.io/shopduck/"><img class="logo" src="/shopduck/images/shopvjt.png" alt="logoshopduck"></a>
+        <ul>
+            <li><a href="https://firet.io/shopduck/">Trang chủ</a></li>
+            <li><a href="#Iphone">Iphone</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="https://firet.io/shopduck/team.php">Liên hệ</a></li>
+            <li><a href="https://firet.io/shopduck/order.php">Đơn hàng</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

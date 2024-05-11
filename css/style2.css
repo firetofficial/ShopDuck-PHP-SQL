@@ -1,0 +1,222 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap';* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto,sans-serif;
+    font-weight: 500
+}
+
+html {
+    font-size: 62.5%
+}
+
+:root {
+    --black: #000000;
+    --light-red: #dd4545
+}
+
+.footer-container {
+    width: 100vw;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 7rem 0 5rem
+}
+
+.learning {
+    color: #fffdfd
+}
+
+.platform {
+    color: #fffdfd
+}
+
+.About {
+    color: #fffdfd
+}
+
+.footer-logo {
+    width: 18vw;
+    margin-left: 7rem
+}
+
+.footer-logo h2 {
+    font-size: 2.7rem;
+    color: #fffdfd
+}
+
+.footer-logo p {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1.5rem 0;
+    line-height: 2.1rem
+}
+
+.footer-logo a {
+    text-decoration: none
+}
+
+.fa {
+    background-color: var(--black);
+    color: #fff;
+    padding: .6rem;
+    border-radius: .3rem
+}
+
+.icons {
+    margin: 0 1.5rem
+}
+
+.footer-links {
+    width: 32vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem
+}
+
+.footer-links ul a li {
+    list-style-type: none;
+    padding: 1rem 0
+}
+
+.footer-links ul a {
+    text-decoration: none;
+    color: #6e6b6b
+}
+
+.footer-contactus {
+    width: 17vw
+}
+
+.footer-contactus h2 {
+    font-size: 1.9rem;
+    color: #fff
+}
+
+.footer-contactus button {
+    padding: 1.4rem 2rem;
+    font-size: 1.6rem;
+    background: var(--light-red);
+    border: none;
+    border-radius: .4rem;
+    color: #ffff;
+    margin-top: 1.6rem;
+    cursor: pointer
+}
+
+.copywright-tag {
+    background-color: #d3d3d3;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center
+}
+
+@media(max-width: 986px) {
+    html {
+        font-size:55%
+    }
+}
+
+@media(max-width: 800px) {
+    .footer-container {
+        flex-direction:column;
+        align-items: center
+    }
+
+    .footer-logo {
+        width: 32vw;
+        margin-bottom: 3rem;
+        margin-left: 0
+    }
+
+    .footer-links {
+        flex-direction: column;
+        text-align: center
+    }
+
+    .footer-links h3 {
+        color: #fff;
+        font-size: 2.4rem;
+        margin: 1rem 0
+    }
+
+    .footer-contactus {
+        width: 21vw;
+        margin-top: 2.4rem;
+        text-align: center
+    }
+
+    .footer-contactus h2 {
+        font-size: 2.5rem;
+        color: #fff
+    }
+}
+
+.glass-panel {
+    color: #fff;
+    margin: 40px auto;
+    background-color: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.5)
+}
+
+.glass-panel:hover {
+    background-color: rgba(80,88,102,.2)
+}
+
+.glass-button {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase
+}
+
+.glass-button:hover {
+    background-color: rgba(224,241,220,.2)
+}
+
+body {
+    background: #fff no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    font-family: open sans,sans-serif
+}
+
+.glass-panel {
+    max-width: 600px
+}
+
+.glass-button {
+    margin: 15px;
+    margin-top: 40px
+}
+
+h1,h1 a {
+    min-height: 120px;
+    width: 90%;
+    max-width: 700px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 60px;
+    color: rgba(255,255,255,.8)
+}
+
