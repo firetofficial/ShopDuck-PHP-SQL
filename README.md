@@ -15,7 +15,6 @@
 
 * [About the Project](#about-the-project)
 * [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
 
 ## About The Project
 
